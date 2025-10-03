@@ -26,9 +26,12 @@ const MainLayout = () => {
       >
         <div className="flex h-16 items-center justify-between border-b border-sidebar-border px-4">
           {!sidebarCollapsed && (
-            <h1 className="bg-gradient-primary bg-clip-text text-xl font-bold text-transparent">
-              TalentFlow
-            </h1>
+            <div className="flex items-center gap-2">
+              <img src="/favicon.png" alt="TalentFlow" className="h-6 w-6" />
+              <h1 className="bg-gradient-primary bg-clip-text text-xl font-bold text-transparent">
+                TalentFlow
+              </h1>
+            </div>
           )}
           <Button
             variant="ghost"
